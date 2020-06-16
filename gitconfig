@@ -47,5 +47,10 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = nina@dynur.com
-	name = Nina Skyttmo
+	email = ninaskyttmo@gmail.com
+	name = nina skyttmo
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
